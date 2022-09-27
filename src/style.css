@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    position: relative;
 }
 
 .container {
@@ -11,11 +12,14 @@ body {
 }
 
 .header {
+    display: flex;
     position: fixed;
+    top: 0;
     width: 100%;
     background-color: black;
     color: white;
     padding: 0;
+    z-index: 100;
 }
 
 .header-container {
@@ -23,22 +27,37 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.4em;
 }
 
 .menu {
     display: none;
+    list-style: none;
 }
 
-.background-img {
-    background-color: black;
+.menu > li {
+    padding: 0 1.8em 0 1.8em;
+    font-size: 0.7em;
+}
+
+.banner {
+    background-color: darkgray;
     width: 100%;
-    height: 100vh;
+    height: 115vh;
 }
 
 .banner-text {
     position: absolute;
     padding: 40vh 4% 20% 4%;
     color: white;
+}
+
+h1 {
+    font-size: 2.5em;
 }
 
 .about-us-btn {
@@ -54,24 +73,138 @@ body {
 }
 
 .services div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 5em 5em 5em;
     background-color: rgb(196, 155, 111);
+}
+
+.services div:nth-of-type(2n+2) {
+    background-color: rgb(186, 107, 23);
+}
+
+.services div img {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    margin-top: -85px;
+}
+
+.services div p {
+    padding: 0 0 2em 0;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.about img {
+    height: 80vh;
+}
+
+.box {
+    width: 50%;
+    height: 5em;
+    background-color: rgb(196, 155, 111);
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(186, 107, 23);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.cards div {
+    width: 90%;
+    height: 20vh;
+    background-color: white;
+}
+
+.footer {
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20vh 2em;
+} 
+
+.footer-container h4 {
+    margin-bottom: 0;
 }
 
 @media only screen and (min-width:900px) {
 
+    .menu {
+        display: flex;
+    }
+
+    #mobile-menu {
+        display: none;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .header-container {
+        width: 70vw;
+    }
+
     .banner-text {
         position: absolute;
-        padding: 30vh 20% 20% 50%;
+        padding: 30vh 15% 20% 50%;
         color: white;
     }
 
     #intro-text {
-        padding-left: 5em;
+        padding: 0 0 0 5em;
         border-left: 1px solid white;
     }
 
+    #intro-text > p {
+        padding-right: 2.5em;
+    }
+
     .services {
+        width: 100%;
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .services div {
+        padding: 0;
+    }
+
+    .services div p {
+        padding: 0 2em 2em 2em;
+    }
+
+    .about {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        width: 70vw;
+        justify-content: space-between;
     }
 
 }
