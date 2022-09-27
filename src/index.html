@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Arden Haldorson" />
     <link rel="stylesheet" href="style.css" />
-
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow-Semi-Condensed" rel="stylesheet">  
+    <meta charset="utf-8">
     <title>Barbershop</title>
   </head>
   <body>
@@ -21,7 +23,7 @@
               <span id="mobile-menu">MENU</span>
               <ul class="menu">
                 <li><span id="home">HOME</span></li>
-                <li>ABOUT</li>
+                <li><a href="#about">ABOUT</a></li>
                 <li>PRICING</li>
                 <li>GALLERY</li>
                 <li>TEAM</li>
@@ -35,12 +37,17 @@
       <div class="wrapper">
         <main>
           <section class="banner">
-            <!-- <div class="fade-out"></div> -->
+            <div class="background-image">
+              <img srcset="file.jpg 480w, file2.jpg 800w"
+              sizes="(max-width: 600px) 480px, 800px"
+              src="file3.jpg"
+              alt="Interior of Barbershop">
+            </div>
+            <div class="fade"></div>
             <div class="banner-text">
-              <span>WELCOME TO BARBERSHOP</span>
+              <span class="gold">Welcome to Barbershop</span>
               <h1>
-                WE WILL MAKE <span id="style-text">YOUR STYLE</span> OF YOUR
-                DREAMS
+                We will make <span id="style-text">your style</span> of your dreams
               </h1>
               <div id="intro-text">
                 <p>
@@ -48,10 +55,11 @@
                   her. Far far away, behind the word mountains, far from the
                   countries Vokalia and Consonantia, there live the blind texts.
                 </p>
-                <button class="about-us-btn">LEARN MORE ABOUT US</button>
+                <button class="about-us-btn"><a href="#about">LEARN MORE ABOUT US</a></button>
               </div>
             </div>
           </section>
+          <!-- Services section -->
           <section class="services">
             <div>
               <img src="images/hair-cut_1.jpg" alt="" />
@@ -98,7 +106,8 @@
               </p>
             </div>
           </section>
-          <section class="about">
+          <!-- About section -->
+          <section class="about" id="about">
             <img src="images/hair-cut_1.jpg" alt="" />
             <div class="about-text">
               <h3>ABOUT BARBER</h3>
@@ -113,9 +122,12 @@
               <div class="box"></div>
             </div>
           </section>
+          <!-- Testimonial section -->
           <section class="testimonial">
-            <h3>TESTIMONIAL</h3>
-            <h4>PEOPLE SAY ABOUT BARBER</h4>
+            <div class="test-text">
+              <h3>TESTIMONIAL</h3>
+              <h4>PEOPLE SAY ABOUT BARBER</h4>
+            </div>
             <!-- <div class="cards">
               <div id="card-1">
                 Separated they live in Bookmarksgrove right at the coast of the
@@ -136,7 +148,6 @@
                 regelialia.
               </div>
             </div> -->
-            
           </section>
         </main>
       </div>
@@ -144,9 +155,9 @@
         <div class="footer-container">
           <div class="social-media">
             <h4>BARBERSHOP</h4>
-            <img />
-            <img />
-            <img />
+            <img src="" alt="" height="50" width="50" />
+            <img src="" alt="" height="50" width="50"/>
+            <img src="" alt="" height="50" width="50"/>
           </div>
 
           <div>

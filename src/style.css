@@ -1,10 +1,38 @@
+@font-face {
+    font-family: MyPoppins;
+    src: local("Poppins Regular"), local("Poppins-Regular");
+}
+
+@font-face {
+    font-family: MyBarlow;
+    src: local("Barlow Regular"), local("Barlow-Regular");
+}
+
 * {
     box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+    font-family: 'Barlow Semi Condensed', 'Gill Sans', sans-serif;
 }
 
 body {
     margin: 0;
     position: relative;
+}
+
+p {
+    font-family: 'Poppins', 'Gill Sans', sans-serif;
 }
 
 .container {
@@ -16,7 +44,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: black;
+    background-color: rgb(20, 27, 37, 0.5);
     color: white;
     padding: 0;
     z-index: 100;
@@ -39,31 +67,45 @@ body {
     list-style: none;
 }
 
-.menu > li {
+.menu li {
     padding: 0 1.8em 0 1.8em;
     font-size: 0.7em;
 }
 
-.banner {
-    background-color: darkgray;
-    width: 100%;
-    height: 120vh;
+.menu li:hover {
+    color: rgb(191 146 91);
 }
+
+.banner {
+    background-color: rgb(71, 66, 66);
+    width: 100%;
+    height: 160vh;
+}
+
+.fade {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    width: 100%;
+    height: 160vh;
+} 
 
 .banner-text {
     position: absolute;
     padding: 40vh 4% 20% 4%;
     color: white;
+    z-index: 99;
 }
 
-h1 {
-    font-size: 2.5em;
+.gold {
+    color: rgb(191 146 91);
+    text-transform: uppercase;
+    font-family: 'Poppins', 'Gill Sans', sans-serif;
 }
 
 .about-us-btn {
-    border: 2px solid white;
+    border: 2px solid rgb(191 146 91);
     background-color: transparent;
-    color: white;
+    color: rgb(191 146 91);
     padding: 0.8rem;
     margin-top: 1.5rem;
 }
@@ -78,11 +120,12 @@ h1 {
     align-items: center;
     flex-direction: column;
     padding: 0 5em 5em 5em;
-    background-color: rgb(196, 155, 111);
+    background-color: rgb(191, 146, 91);
+    color: white;
 }
 
 .services div:nth-of-type(2n+2) {
-    background-color: rgb(186, 107, 23);
+    background-color: rgb(172, 127, 72);
 }
 
 .services div img {
@@ -119,6 +162,12 @@ h1 {
     background-color: rgb(186, 107, 23);
 }
 
+.test-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .cards {
     display: flex;
     justify-content: center;
@@ -144,6 +193,13 @@ h1 {
 
 .footer-container h4 {
     margin-bottom: 0;
+}
+
+@supports (-webkit-text-stroke: 1px white) {
+    #style-text {
+      -webkit-text-stroke: 1px white;
+      -webkit-text-fill-color: rgb(0, 0, 0, 0);
+    }
 }
 
 @media only screen and (min-width:900px) {
