@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Arden Haldorson" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Barlow-Semi-Condensed" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Poppins:medium,semibold|Barlow+Semi+Condensed:bold,black" rel="stylesheet"> 
     <meta charset="utf-8">
     <title>Barbershop</title>
   </head>
@@ -18,11 +17,11 @@
           <div>
             <span class="logo">BARBERSHOP</span>
           </div>
-          <div>
+          <div class="menu-container">
             <nav>
-              <span id="mobile-menu">MENU</span>
+              <button id="menu-button">MENU</button>
               <ul class="menu">
-                <li><span id="home">HOME</span></li>
+                <li><a href="#banner">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li>PRICING</li>
                 <li>GALLERY</li>
@@ -36,13 +35,8 @@
       </header>
       <div class="wrapper">
         <main>
-          <section class="banner">
-            <div class="background-image">
-              <img srcset="file.jpg 480w, file2.jpg 800w"
-              sizes="(max-width: 600px) 480px, 800px"
-              src="file3.jpg"
-              alt="Interior of Barbershop">
-            </div>
+          <!-- Banner section -->
+          <section class="banner" id="banner">
             <div class="fade"></div>
             <div class="banner-text">
               <span class="gold">Welcome to Barbershop</span>
@@ -187,4 +181,10 @@
       </footer>
     </div>
   </body>
+  <script>
+    const menuBtn = document.querySelector('#menu-button');
+    menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('menu-open');
+    });
+    </script>
 </html>
