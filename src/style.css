@@ -233,6 +233,10 @@ nav {
   margin-top: 20%;
 }
 
+.card {
+  float: left;
+}
+
 .card-content {
   position: absolute;
   background-color: white;
@@ -247,9 +251,20 @@ nav {
   display: flex;
 }
 
-.card {
-  float: left;
+#quote-circle {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: -70px;
+  left: 35px;
+  border-radius: 100%;
+  background-color: rgb(191 146 91);
+  z-index: 5;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
+
 
 .card-content > * {
   opacity: 0;
