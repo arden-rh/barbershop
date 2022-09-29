@@ -18,17 +18,23 @@ a {
 }
 
 h1 {
-  font-size: 2.5em;
-  font-weight: 700;
+  font-size: 3em;
   margin: 0;
+  font-family: "Barlow Condensed", "Gill Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1em;
 }
 
-h1,
 h2,
 h3,
 h4 {
   text-transform: uppercase;
   font-family: "Barlow Semi Condensed", "Gill Sans", sans-serif;
+}
+
+h3 {
+  color: rgb(191 146 91);
 }
 
 body {
@@ -38,17 +44,22 @@ body {
 
 p {
   font-family: "Poppins", "Gill Sans", sans-serif;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
 }
 
 li {
   list-style: none;
 }
 
-.container {
+.wrapper {
   padding: 0;
 }
 
-.header {
+.navbar {
   display: flex;
   position: fixed;
   top: 0;
@@ -62,7 +73,7 @@ li {
   font-weight: 700;
 }
 
-.header-container {
+.navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,8 +82,10 @@ li {
 }
 
 .logo {
-  font-size: 1.4em;
+  font-size: 1.6em;
   color: white;
+  font-family: "Barlow Condensed", "Gill Sans", sans-serif;
+  font-weight: 700;
 }
 
 .menu {
@@ -83,43 +96,56 @@ li {
   background-color: transparent;
   border: 0;
   color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .menu li {
   padding: 0 1.8em 0 1.8em;
   font-size: 0.7em;
+  text-transform: uppercase;
 }
 
 .menu li:hover {
   color: rgb(191 146 91);
 }
 
-.banner {
+.header {
   background: url("images/banner.jpg") no-repeat center;
+  background-size: cover;
   width: 100%;
-  height: 160vh;
+  height: 860px;
   z-index: 50;
   padding: 0;
+  position: relative;
 }
 
 .fade {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   width: 100%;
-  height: 160vh;
+  height: 860px;
   top: 0;
   z-index: 75;
 }
 
-.banner-text {
+.header-text {
   position: absolute;
-  padding: 40vh 4% 20% 4%;
+  padding: 60vh 4% 20% 3%;
   color: white;
   z-index: 90;
   top: 0;
 }
 
-.gold {
+#intro-text p {
+  margin: 2em 0 1em 0;
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 2em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.welcome-text {
   color: rgb(191 146 91);
   text-transform: uppercase;
   font-family: "Poppins", "Gill Sans", sans-serif;
@@ -130,10 +156,12 @@ li {
   border: 2px solid rgb(191 146 91);
   background-color: transparent;
   color: rgb(191 146 91);
-  padding: 0.8rem;
-  margin-top: 1.5rem;
+  padding: 0.6em 0.8em;
+  margin-top: 1.5em;
   font-family: "Poppins", "Gill Sans", sans-serif;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .services {
@@ -186,24 +214,157 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(186, 107, 23);
+  background-color: rgb(235, 232, 222);
 }
 
-.test-text {
+.testimonial-text {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.cards {
-  display: flex;
-  justify-content: center;
+/* .test-1 {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  display: block;
+  position: relative;
 }
 
-.cards div {
-  width: 90%;
-  height: 20vh;
+.page {
+  display: block;
+  position: absolute;
   background-color: white;
+  top: 2em;
+  left: 0;
+  width: 200px;
+  height: 150px;
+  transition: transform 0.5s;
+  transform: scale(0);
+}
+
+.page div {
+  padding: 3em;
+}
+
+.page div label {
+  cursor: pointer;
+  background: #d9ff4f;
+  padding: 1em 2em;
+}
+
+@for $i from 1 through 5 {
+  #page#{$i}cb:checked ~ {
+    #page#{$i} {
+      transform: scale(1);
+    }
+  }
+} */
+
+.test-2 {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+}
+
+.card-container {
+  position: relative;
+  min-height: 200px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+
+/* .card {
+  width: 250px;
+  height: 200px;
+  padding: 2em;
+  background-color: white;
+} */
+
+.card {
+  float: left;
+}
+
+.card label {
+  background: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-left: -1px;
+  position: relative;
+  left: 1px;
+}
+
+.card [type="radio"] {
+  opacity: 1;
+}
+
+.card-content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  width: 200px;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.test-content {
+  position: absolute;
+  background-color: white;
+  width: 200px;
+  padding: 20vh;
+  top: 28px;
+  right: 25vw;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.test-card {
+    float: left;
+}
+
+.test-content > * {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.6s ease;
+}
+
+.card-content > * {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.6s ease;
+}
+
+[type="radio"]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+
+[type="radio"]:checked ~ label ~ .card-content {
+  z-index: 1;
+}
+
+.test-card input[type="radio"] {
+  display: block;
+}
+
+[type="radio"]:checked ~ .test-content {
+  z-index: 1;
+}
+
+[type="radio"]:checked ~ label ~ .card-content > * {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+[type="radio"]:checked ~ .test-content > * {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .footer {
@@ -213,24 +374,35 @@ li {
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 20vh 1.5em;
+  display: grid;
+  padding: 10vh 0 20vh 0.5em;
 }
 
 .footer-container h4 {
-  margin-bottom: 0;
+  margin: 0 0 1.5em 0;
+  font-size: 1.2em;
 }
 
 .footer-list {
-    padding: 0;
+  padding: 0 0 0 1.5em;
 }
 
 .footer-list li {
-  color: white;
+  color: rgba(255, 255, 255, 0.6);
   list-style: ">";
-  padding: 0.2em 0.5em;
+  padding: 0.2em 0.4em;
   font-family: "Poppins", "Gill Sans", sans-serif;
+  font-weight: 400;
+}
+
+.social-media {
+  padding: 0 0 10vh 0;
+}
+
+.social-media p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9em;
+  font-weight: 300;
 }
 
 @supports (-webkit-text-stroke: 1px white) {
@@ -240,7 +412,27 @@ li {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 500px) {
+  .header {
+    height: 750px;
+  }
+
+  .fade {
+    height: 750px;
+  }
+}
+
+@media only screen and (min-width: 775px) {
+  .header {
+    height: 700px;
+  }
+
+  .fade {
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 999px) {
   button + .menu {
     display: none;
     opacity: 0;
@@ -260,7 +452,11 @@ li {
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 999px) {
+  .logo {
+    font-size: 1.4em;
+  }
+
   .menu {
     display: flex;
   }
@@ -269,27 +465,46 @@ li {
     display: none;
   }
 
-  .header {
+  .navbar {
     justify-content: center;
   }
 
-  .header-container {
-    width: 70vw;
+  .navbar-container {
+    width: 65vw;
+    padding: 2px;
   }
 
-  .banner-text {
+  .header {
+    height: 800px;
+  }
+
+  .fade {
+    height: 800px;
+  }
+
+  .header-text {
     position: absolute;
-    padding: 30vh 15% 20% 50%;
+    padding: 30vh 20% 20% 50%;
     color: white;
   }
 
-  #intro-text {
-    padding: 0 0 0 5em;
-    border-left: 1px solid white;
+  .welcome-text {
+    font-size: 0.8em;
   }
 
-  #intro-text > p {
-    padding-right: 2.5em;
+  #intro-text {
+    padding: 0 1em 0 5em;
+    margin: 0 0 0 0.7em;
+    border-left: 1px solid rgb(191 146 91);
+  }
+
+  #intro-text p {
+    padding-right: 4em;
+    font-size: 0.7em;
+  }
+
+  .about-us-btn {
+    border-width: 1.5px;
   }
 
   .services {
@@ -315,8 +530,34 @@ li {
   }
 
   .footer-container {
-    flex-direction: row;
+    grid-template-columns: repeat(4, 1fr);
     width: 70vw;
     justify-content: space-between;
+    padding: 10vh 0 20vh 0.5em;
+    gap: 5em;
+  }
+
+  .footer-list {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .header {
+    height: 750px;
+  }
+
+  .fade {
+    height: 750px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .header {
+    height: 700px;
+  }
+
+  .fade {
+    height: 700px;
   }
 }
