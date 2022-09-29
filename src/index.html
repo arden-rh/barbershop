@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:light,medium,semibold|Barlow+Semi+Condensed:bold,black|Barlow+Condensed:light,regular,medium,semi-bold,bold"
+      href="https://fonts.googleapis.com/css?family=Poppins:light,medium,semibold,bold|Barlow+Semi+Condensed:bold,black|Barlow+Condensed:light,regular,medium,semi-bold,bold"
       rel="stylesheet"
     />
     <meta charset="utf-8" />
@@ -22,18 +22,18 @@
           <div>
             <span class="logo"><a href="#header">BARBERSHOP</a></span>
           </div>
-            <nav>
-              <button id="menu-button">Menu</button>
-              <ul class="menu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#footer">Contact</a></li>
-              </ul>
-            </nav>
+          <nav>
+            <button id="menu-button">Menu</button>
+            <ul class="menu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#footer">Contact</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
       <main>
@@ -64,45 +64,47 @@
             <img src="images/hair-cut_1.jpg" alt="" />
             <h2>Hairstyles</h2>
             <p>
-              A small river named Duden flows by their place and
-              supplies it with the necessary regelialia. It
-              is a paradisematic country, in which roasted parts.
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country, in
+              which roasted parts.
             </p>
           </div>
           <div>
             <img src="images/hair-cut_1.jpg" alt="" />
             <h2>Beard trim</h2>
             <p>
-              A small river named Duden flows by their place and
-              supplies it with the necessary regelialia. It
-              is a paradisematic country, in which roasted parts.
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country, in
+              which roasted parts.
             </p>
           </div>
           <div>
             <img src="images/hair-cut_1.jpg" alt="" />
             <h2>Hot Shave</h2>
             <p>
-              A small river named Duden flows by their place and
-              supplies it with the necessary regelialia. It
-              is a paradisematic country, in which roasted parts.
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country, in
+              which roasted parts.
             </p>
           </div>
           <div>
             <img src="images/hair-cut_1.jpg" alt="" />
             <h2>Hair Schampoo</h2>
             <p>
-              A small river named Duden flows by their place and
-              supplies it with the necessary regelialia. It
-              is a paradisematic country, in which roasted parts.
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country, in
+              which roasted parts.
             </p>
           </div>
         </section>
         <!-- About section -->
         <section class="about" id="about">
-          <img src="images/hair-cut_1.jpg" alt="" />
+          <img id="about-img" src="images/hair-cut_1.jpg" alt="" />
           <div class="about-text">
             <h3>About Barber</h3>
-            <span class="short-text">A smooth barber experience in your town</span>
+            <span class="short-text"
+              >A smooth barber <br />experience in your town</span
+            >
             <p>
               Separated they live in Bookmarksgrove right at the coast of the
               Semantics, a large language ocean. A small river named Duden flows
@@ -110,7 +112,15 @@
               is a paradisematic country, in which roasted parts of sentences
               fly into your mouth.
             </p>
-            <div class="box"></div>
+            <div class="box">
+              <div class="box-container">
+                <img class="icon" src="" alt="" height="50px" width="50px" />
+                <div>
+                  <span id="number">20</span>
+                  <span id="experience">Years of experience</span>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <!-- Testimonial section -->
@@ -119,38 +129,32 @@
             <h3>Testimonial</h3>
             <span class="short-text"">People say about our Barber</span>
           </div>
-          <!-- <div class="card-container">
+          <!-- Mobile Card Carousel-->
+          <div class="card-container">
             <div class="card">
-              <input type="radio" id="card-1" name="cards" checked />
-              <label for="card-1">Tab One</label>
-              <div class="card-content">Card 1</div>
+              <input type="radio" id="card-1" name="review-cards" checked />
+              <div class="card-content">
+                <div id="quote-circle"></div>
+                <p>
+                  Far far away behind, the word mountains, far the countries
+                  Vokalia and Consonantia, there live the blind texts.
+                </p>
+              </div>
             </div>
             <div class="card">
-              <input type="radio" id="card-2" name="cards" />
-              <label for="card-2">Tab two</label>
-              <div class="card-content">Card 2</div>
+              <input type="radio" id="card-2" name="review-cards" />
+              <div class="card-content">hej 2</div>
             </div>
             <div class="card">
-              <input type="radio" id="card-3" name="cards" />
-              <label for="card-3">Tab 3</label>
-              <div class="card-content">Card 3</div>
+              <input type="radio" id="card-3" name="review-cards" />
+              <div class="card-content">hej 3</div>
             </div>
-          </div> -->
-
-          <div class="test-2">
-            <div class="test-card">
-              <input type="radio" id="test-card-1" name="test-cards" checked />
-              <div class="test-content">hej</div>
-            </div>
-            <div class="test-card">
-              <input type="radio" id="test-card-2" name="test-cards" />
-              <div class="test-content">hej 2</div>
-            </div>
-            <div class="test-card">
-              <input type="radio" id="test-card-3" name="test-cards" />
-              <div class="test-content">hej 3</div>
-            </div>
-
+          </div>
+          <!--Desktop Card Display-->
+          <div class="card-grid">
+            <div class="card-content"></div>
+            <div class="card-content"></div>
+            <div class="card-content"></div>
           </div>
         </section>
       </main>
@@ -161,9 +165,9 @@
             <p>
               Far far away, behind the word mountains, far from the countries.
             </p>
-            <img src="" alt="" height="50" width="50" />
-            <img src="" alt="" height="50" width="50" />
-            <img src="" alt="" height="50" width="50" />
+            <img class="icon" src="" alt="" height="50px" width="50px" />
+            <img class="icon" src="" alt="" height="50px" width="50px" />
+            <img class="icon" src="" alt="" height="50px" width="50px" />
           </div>
 
           <div>

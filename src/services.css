@@ -24,13 +24,13 @@
   z-index: 80;
 }
 
-.services div h2 {
+.services h2 {
   font-size: 2em;
   font-weight: 500;
   padding: 1em 0 0.5em 0;
 }
 
-.services div p {
+.services p {
   padding: 0 0 2em 0;
   font-size: 1em;
   font-weight: 300;
