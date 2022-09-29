@@ -31,12 +31,12 @@ h3,
 h4 {
   text-transform: uppercase;
   font-family: "Barlow Condensed", "Gill Sans", sans-serif;
-  font-weight: 600;
   margin: 0;
 }
 
 h3 {
   color: rgb(191 146 91);
+  font-weight: 600;
 }
 
 h4 {
@@ -82,7 +82,6 @@ li {
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 10px;
   width: 100%;
 }
@@ -98,6 +97,10 @@ li {
   display: none;
 }
 
+nav {
+  padding-top: 5px;
+}
+
 #menu-button {
   background-color: transparent;
   border: 0;
@@ -110,6 +113,10 @@ li {
   padding: 0 1.8em 0 1.8em;
   font-size: 0.7em;
   text-transform: uppercase;
+}
+
+.menu li:nth-child(1) {
+  color: rgb(191 146 91);
 }
 
 .menu li:hover {
@@ -179,7 +186,7 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 5em 5em 5em;
+  padding: 0 1em 5em 1em;
   background-color: rgb(191, 146, 91);
   color: white;
 }
@@ -189,15 +196,25 @@ li {
 }
 
 .services div img {
-  height: 175px;
-  width: 175px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
-  margin-top: -85px;
+  margin-top: -75px;
   z-index: 80;
+}
+
+.services div h2 {
+  font-size: 2em;
+  font-weight: 500;
+  padding: 1em 0 0.5em 0;
 }
 
 .services div p {
   padding: 0 0 2em 0;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  line-height: 2em;
 }
 
 .about {
@@ -450,6 +467,15 @@ input:checked {
     font-size: 0.8em;
     list-style: ">";
   }
+
+  button.menu-open + .menu li:nth-child(1) {
+    color: inherit;
+  }
+
+  button.menu-open + .menu li:hover {
+    color: rgb(191 146 91); 
+  }
+
 }
 
 @media only screen and (min-width: 999px) {
@@ -459,6 +485,10 @@ input:checked {
 
   .menu {
     display: flex;
+  }
+
+  nav {
+    padding-top: 0;
   }
 
   #menu-button {
@@ -472,6 +502,7 @@ input:checked {
   .navbar-container {
     width: 65vw;
     padding: 2px;
+    align-items: center;
   }
 
   .header {
@@ -514,6 +545,14 @@ input:checked {
 
   .services div {
     padding: 0;
+  }
+
+  .services div img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: -100px;
+    z-index: 80;
   }
 
   .services div p {
