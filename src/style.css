@@ -8,6 +8,8 @@
     src: local("Barlow Black"), local("Barlow-Black");
 } */
 
+@import "header.css";
+
 * {
   box-sizing: border-box;
 }
@@ -121,60 +123,6 @@ nav {
 
 .menu li:hover {
   color: rgb(191 146 91);
-}
-
-.header {
-  background: url("images/banner.jpg") no-repeat center;
-  background-size: cover;
-  width: 100%;
-  height: 860px;
-  z-index: 50;
-  padding: 0;
-  position: relative;
-}
-
-.fade {
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  width: 100%;
-  height: 860px;
-  top: 0;
-  z-index: 75;
-}
-
-.header-text {
-  position: absolute;
-  padding: 60vh 4% 20% 3%;
-  color: white;
-  z-index: 90;
-  top: 0;
-}
-
-#intro-text p {
-  margin: 2em 0 1em 0;
-  font-weight: 400;
-  font-size: 0.9em;
-  line-height: 2em;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.welcome-text {
-  color: rgb(191 146 91);
-  text-transform: uppercase;
-  font-family: "Poppins", "Gill Sans", sans-serif;
-  font-weight: 600;
-}
-
-.about-us-btn {
-  border: 2px solid rgb(191 146 91);
-  background-color: transparent;
-  color: rgb(191 146 91);
-  padding: 0.6em 0.8em;
-  margin-top: 1.5em;
-  font-family: "Poppins", "Gill Sans", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
 }
 
 .services {
@@ -349,7 +297,6 @@ input {
 
   /* The border will be the spacing between the dot and the outer circle */
   border: 5px solid rgb(216, 214, 214);
-
 }
 
 input:checked {
@@ -377,7 +324,6 @@ input:checked {
 [type="radio"]:checked ~ .test-content {
   z-index: 1;
 }
-
 
 [type="radio"]:checked ~ .test-content > * {
   opacity: 1;
@@ -473,9 +419,8 @@ input:checked {
   }
 
   button.menu-open + .menu li:hover {
-    color: rgb(191 146 91); 
+    color: rgb(191 146 91);
   }
-
 }
 
 @media only screen and (min-width: 999px) {
