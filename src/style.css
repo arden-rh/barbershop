@@ -242,7 +242,7 @@ nav {
   width: 35px;
   height: 35px;
   top: -70px;
-  left: 35px;
+  left: 8vw;
   border-radius: 100%;
   background-color: rgb(191 146 91);
   z-index: 5;
@@ -259,6 +259,7 @@ nav {
   position: absolute;
   background-color: white;
   width: 90vw;
+  max-width: 600px;
   height: 240px;
   padding: 20px;
   top: -50px;
@@ -300,17 +301,13 @@ nav {
 }
 
 input {
-  /* The native appearance is hidden */
   appearance: none;
   -webkit-appearance: none;
 
-  /* For a circular appearance we need a border-radius. */
   border-radius: 50%;
 
-  /* The background will be the radio dot's color. */
   background: rgb(196, 155, 111);
 
-  /* The border will be the spacing between the dot and the outer circle */
   border: 5px solid rgb(216, 214, 214);
 }
 
@@ -414,7 +411,7 @@ input:checked {
   }
 }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 900px) {
   button + .menu {
     display: none;
     opacity: 0;
@@ -440,7 +437,9 @@ input:checked {
   button.menu-open + .menu li:hover {
     color: rgb(191 146 91);
   }
+}
 
+@media only screen and (max-width: 999px) {
   .card-content > * {
     opacity: 0;
     transform: translateX(-100%);
@@ -448,7 +447,17 @@ input:checked {
   }
 }
 
-@media only screen and (min-width: 999px) {
+@media only screen and (min-width: 650px) {
+  #quote-circle {
+    left: 12vw;
+  }
+
+  .card-content {
+    left: 10vw;
+  }
+}
+
+@media only screen and (min-width: 900px) {
   .logo {
     font-size: 1.4em;
   }
@@ -517,14 +526,6 @@ input:checked {
     padding: 0;
   }
 
-  .services div img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    margin-top: -100px;
-    z-index: 80;
-  }
-
   .services div p {
     padding: 0 2em 2em 2em;
   }
@@ -561,6 +562,32 @@ input:checked {
     margin-bottom: 15%;
   }
 
+  #quote-circle {
+    left: 19vw;
+  }
+
+  .card-content {
+    left: 17vw;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    width: 70vw;
+    justify-content: space-between;
+    padding: 10vh 0 5vh 0.5em;
+    gap: 5em;
+  }
+
+  .footer-list {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 999px) {
   .card-container {
     display: none;
   }
@@ -568,19 +595,18 @@ input:checked {
   .card-row {
     display: flex;
     width: 100%;
-    height: 30%;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    margin: 10% 0 15% 0; 
+    margin: 10% 0 15% 0;
+    padding: 0 2.5% 0 0;
   }
 
   .card-content {
     position: relative;
     background-color: white;
-    width: 400px;
+    width: 30%;
+    max-width: 350px;
     height: 240px;
-    padding: 20px;
     border-radius: 2%;
     display: flex;
     flex-direction: row;
@@ -592,20 +618,15 @@ input:checked {
     bottom: 0;
   }
 
-  .footer {
-    justify-content: center;
+  .card-content p {
+    font-size: 0.9em;
+    padding: 0.5em 0 1.4em 0;
   }
 
-  .footer-container {
-    grid-template-columns: repeat(4, 1fr);
-    width: 70vw;
-    justify-content: space-between;
-    padding: 10vh 0 20vh 0.5em;
-    gap: 5em;
-  }
-
-  .footer-list {
-    padding: 0;
+  #quote-circle {
+    position: relative;
+    top: -120px;
+    left: 55px;
   }
 }
 
@@ -617,6 +638,10 @@ input:checked {
   .fade {
     height: 750px;
   }
+
+  .card-content {
+    height: 220px;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -626,5 +651,13 @@ input:checked {
 
   .fade {
     height: 700px;
+  }
+
+  .services div img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: -100px;
+    z-index: 80;
   }
 }
