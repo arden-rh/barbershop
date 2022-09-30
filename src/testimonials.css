@@ -46,13 +46,9 @@
     align-items: center;
   }
 
-  .fa-solid {
-    color: white;
-    font-size: 1em;
-  }
-  
   #quote {
-    width: 15px;
+    fill: white;
+    width: 1em;
   }
   
   .card-content {
