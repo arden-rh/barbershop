@@ -101,7 +101,7 @@
 
 .fa-ul {
   list-style-type: none;
-  margin-left: var(--fa-li-margin, 2.5em);
+  margin-left: var(--fa-li-margin, 1.7em);
   padding-left: 0; }
   .fa-ul > li {
     position: relative; }
