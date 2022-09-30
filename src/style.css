@@ -138,11 +138,19 @@ nav {
 .about {
   display: flex;
   flex-direction: column;
-  padding: 0 10px;
+  padding: 0 2%;
+  align-items: center;
 }
 
-#about-img {
-  height: 375px;
+.about-images {
+  width: 100%;
+}
+
+.about img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .about h3 {
@@ -172,36 +180,30 @@ nav {
   margin-bottom: 15%;
 }
 
-.icon {
-  height: 25px;
-  width: 25px;
-}
-
 .box-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 0 0 1.2em;
+  padding: 0 1em 0 1.2em;
+  gap: 1em;
 }
 
-.box-container div {
+.calendar-text {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
   font-family: "Poppins", "Gill Sans", sans-serif;
   font-weight: 700;
   color: white;
-  padding: 0 1.3em;
 }
 
 .calendar {
-  width: 50px;
-  height: 50px;
   background-color: black;
   border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.8em;
 }
 
 #number {
@@ -325,6 +327,7 @@ nav {
   .fade {
     height: 750px;
   }
+
 }
 
 @media only screen and (min-width: 775px) {
@@ -335,7 +338,10 @@ nav {
   .fade {
     height: 700px;
   }
-}
+  
+  .about img {
+    height: 650px;
+  }
 
 @media only screen and (max-width: 900px) {
   button + .menu {
@@ -456,17 +462,18 @@ nav {
 
   .about {
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
     padding: 0 10%;
+    gap: 8%;
   }
 
-  #about-img {
-    height: 750px;
+  .about-images {
+    margin-bottom: -5px;
     width: 45%;
   }
 
   .about-text {
-    padding-left: 5%;
+    padding: 5% 0 0 0;
     width: 50%;
   }
 
@@ -476,14 +483,6 @@ nav {
 
   .short-text {
     font-size: 3em;
-  }
-
-  .box {
-    height: 5em;
-    background-color: rgb(196, 155, 111);
-    display: flex;
-    align-items: center;
-    margin-bottom: 15%;
   }
 
   #quote-circle {
@@ -574,6 +573,14 @@ nav {
     left: 55px;
   }
 
+  .about-images {
+    width: auto;
+  }
+
+  .about img {
+    width: auto;
+  }
+
   .card-content {
     height: 220px;
   }
@@ -599,6 +606,11 @@ nav {
     margin-top: -100px;
     z-index: 80;
   }
+
+  .about {
+    gap: 5%;
+  }
+
 }
 
 @media only screen and (min-width: 1800px) {
