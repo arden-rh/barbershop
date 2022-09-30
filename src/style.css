@@ -243,6 +243,17 @@ nav {
   font-weight: 300;
 }
 
+.social-media-symbols {
+  display: flex;
+}
+
+.social-media-circle {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(191 146 91);
+  border-radius: 100%;
+}
+
 @supports (-webkit-text-stroke: 1px white) {
   #style-text {
     -webkit-text-stroke: 1px white;
