@@ -272,7 +272,7 @@ nav {
   position: relative;
   font-family: "Poppins", "Gill Sans", sans-serif;
   color: rgba(255, 255, 255, 0.6);
-  margin-left: 0.8em
+  margin-left: 0.8em;
 }
 
 .contact-list li {
@@ -291,6 +291,11 @@ nav {
 .contact-list li svg {
   fill: rgb(191 146 91);
   width: 1em;
+}
+
+.contact-list li a {
+  pointer-events: none;
+  cursor: default;
 }
 
 #map {
@@ -312,7 +317,6 @@ nav {
 }
 
 @media only screen and (min-width: 775px) {
-
   .about img {
     height: 650px;
   }
@@ -357,15 +361,24 @@ nav {
 @media only screen and (min-width: 650px) {
   .header {
     background: url("images/banner_img_1200w.jpg") no-repeat center;
+  }
 
+  .short-text {
+    font-size: 3em;
+  }
+
+  .card-container {
+    margin: 20% 0;
   }
 
   #quote-circle {
-    left: 12vw;
+    left: 17vw;
   }
 
   .card-content {
-    left: 10vw;
+    width: 70vw;
+    left: 15vw;
+    padding: 30px;
   }
 }
 
@@ -453,16 +466,12 @@ nav {
     padding: 0 0 0.2em 0;
   }
 
-  .short-text {
-    font-size: 3em;
-  }
-
   #quote-circle {
-    left: 19vw;
+    left: 20vw;
   }
 
   .card-content {
-    left: 17vw;
+    left: 18vw;
   }
 
   .footer {
@@ -498,7 +507,7 @@ nav {
     align-items: center;
     justify-content: center;
     margin: 10% 0 15% 0;
-    padding: 0 2.5% 0 0;
+    padding: 0 3% 0 0;
   }
 
   .card-content {
@@ -516,6 +525,7 @@ nav {
     top: 0;
     left: 0;
     bottom: 0;
+    padding: 25px;
   }
 
   #quote-circle {
