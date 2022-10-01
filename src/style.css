@@ -9,6 +9,7 @@
 a {
   color: inherit;
   text-decoration: none;
+  display: flex;
 }
 
 h1 {
@@ -316,42 +317,36 @@ nav {
   }
 }
 
-@media only screen and (min-width: 775px) {
-  .about img {
-    height: 650px;
-  }
-}
-
 @media only screen and (max-width: 900px) {
-  button + .menu {
+  button+.menu {
     display: none;
     opacity: 0;
     visibility: hidden;
   }
 
-  button.menu-open + .menu {
+        button.menu-open+.menu {
     display: block;
     opacity: 1;
     visibility: visible;
   }
 
-  button.menu-open + .menu li {
+        button.menu-open+.menu li {
     padding: 0.4em;
     font-size: 0.8em;
     list-style: ">";
   }
 
-  button.menu-open + .menu li:nth-child(1) {
+        button.menu-open+.menu li:nth-child(1) {
     color: inherit;
   }
 
-  button.menu-open + .menu li:hover {
+        button.menu-open+.menu li:hover {
     color: rgb(191 146 91);
   }
 }
 
 @media only screen and (max-width: 999px) {
-  .card-content > * {
+  .card-content>* {
     opacity: 0;
     transform: translateX(-100%);
     transition: all 0.6s ease;
@@ -371,7 +366,7 @@ nav {
     margin: 20% 0;
   }
 
-  #quote-circle {
+        .quote-circle {
     left: 17vw;
   }
 
@@ -382,6 +377,11 @@ nav {
   }
 }
 
+@media only screen and (min-width: 775px) {
+  .about img {
+    height: 650px;
+  }
+}
 @media only screen and (min-width: 900px) {
   .logo {
     font-size: 1.4em;
@@ -410,7 +410,7 @@ nav {
   }
 
   .header-text {
-    padding: 20% 20% 20% 50%;
+    padding: 20% 10% 20% 50%;
   }
 
   .welcome-text {
@@ -418,7 +418,7 @@ nav {
   }
 
   #intro-text {
-    padding: 0 1em 0 5em;
+    padding: 0 0 0 5em;
     margin: 0 0 0 0.7em;
     border-left: 1px solid rgb(191 146 91);
   }
@@ -454,7 +454,7 @@ nav {
 
   .about-images {
     margin-bottom: -5px;
-    width: 50%;
+    width: 60%;
   }
 
   .about-text {
@@ -466,7 +466,7 @@ nav {
     padding: 0 0 0.2em 0;
   }
 
-  #quote-circle {
+        .quote-circle {
     left: 20vw;
   }
 
@@ -528,7 +528,7 @@ nav {
     padding: 25px;
   }
 
-  #quote-circle {
+        .quote-circle {
     position: relative;
     top: -120px;
     left: 55px;
