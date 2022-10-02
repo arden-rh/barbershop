@@ -335,6 +335,9 @@
 }
 
 @media only screen and (min-width: 650px) {
+  .about img {
+    height: 650px;
+  }
   .box {
     width: 40%;
   }
@@ -347,7 +350,7 @@
     gap: 8%;
   }
   .about img {
-    height: 650px;
+    height: 700px;
   }
   .about-images {
     width: 60%;
@@ -367,6 +370,7 @@
     gap: 5%;
   }
   .about img {
+    height: 650px;
     width: 80%;
   }
   .box {
