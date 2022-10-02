@@ -140,6 +140,8 @@ input:checked {
   transform: translateX(0);
 }
 
+/* Testimonials Break-point 650px */
+
 @media only screen and (min-width: 650px) {
   .card-container {
     margin: 20% 0;
@@ -161,6 +163,8 @@ input:checked {
     transition: all 0.6s ease;
   }
 }
+
+/* Testimonials Break-point 999px */
 
 @media only screen and (min-width: 999px) {
   .testimonial-text {
@@ -203,6 +207,8 @@ input:checked {
     left: 20px;
   }
 }
+
+/* Testimonials Break-point 1349px */
 
 @media only screen and (min-width: 1349px) {
   .card-container {

@@ -78,6 +78,7 @@
     color: rgb(191, 146, 91);
   }
 }
+/* Navbar Break-point 999px */
 @media only screen and (min-width: 999px) {
   .navbar {
     justify-content: center;
@@ -97,6 +98,7 @@
     padding: 0 1.2em;
   }
 }
+/* Navbar Break-point 1349px */
 @media only screen and (min-width: 1349px) {
   .menu li {
     padding: 0 1.8em;
@@ -150,6 +152,7 @@
   letter-spacing: 0.1em;
 }
 
+/* Header Break-point 650px */
 @media only screen and (min-width: 650px) {
   .header {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("images/banner/banner_img_1200w.jpg") no-repeat center;
@@ -159,6 +162,7 @@
     padding: 30% 4% 20% 3%;
   }
 }
+/* Header Break-point 999px */
 @media only screen and (min-width: 999px) {
   .header {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("images/banner/banner_img_1400w.jpg") no-repeat center;
@@ -182,6 +186,7 @@
     border-width: 1.5px;
   }
 }
+/* Header Break-point 1349px */
 @media only screen and (min-width: 1349px) {
   .header {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("images/banner/banner_img_1800w.jpg") no-repeat center;
@@ -194,6 +199,7 @@
     font-size: 0.8em;
   }
 }
+/* Header Break-point 1799px */
 @media only screen and (min-width: 1799px) {
   .header {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("images/banner/banner_img_3000w.jpg") no-repeat center;
@@ -236,6 +242,7 @@
   line-height: 2em;
 }
 
+/* Services Break-point 999px */
 @media only screen and (min-width: 999px) {
   .services {
     width: 100%;
@@ -248,6 +255,7 @@
     padding: 0 2em 2em 2em;
   }
 }
+/* Services Break-point 1349px */
 @media only screen and (min-width: 1349px) {
   .services div img {
     height: 200px;
@@ -331,6 +339,7 @@
   letter-spacing: 0.1em;
 }
 
+/* About Break-point 650px */
 @media only screen and (min-width: 650px) {
   .about img {
     height: 650px;
@@ -339,6 +348,7 @@
     width: 40%;
   }
 }
+/* About Break-point 999px */
 @media only screen and (min-width: 999px) {
   .about {
     flex-direction: row;
@@ -362,6 +372,7 @@
     width: 50%;
   }
 }
+/* About Break-point 1349px */
 @media only screen and (min-width: 1349px) {
   .about {
     gap: 5%;
@@ -374,6 +385,7 @@
     width: 40%;
   }
 }
+/* About Break-point 1799px */
 @media only screen and (min-width: 1799px) {
   .about img {
     height: 45vw;
@@ -516,6 +528,7 @@ input:checked {
   transform: translateX(0);
 }
 
+/* Testimonials Break-point 650px */
 @media only screen and (min-width: 650px) {
   .card-container {
     margin: 20% 0;
@@ -536,6 +549,7 @@ input:checked {
     transition: all 0.6s ease;
   }
 }
+/* Testimonials Break-point 999px */
 @media only screen and (min-width: 999px) {
   .testimonial-text {
     padding: 5% 0 0 0;
@@ -571,6 +585,7 @@ input:checked {
     left: 20px;
   }
 }
+/* Testimonials Break-point 1349px */
 @media only screen and (min-width: 1349px) {
   .card-container {
     margin: 5% 0 10% 0;
@@ -670,6 +685,7 @@ input:checked {
   width: 1.4em;
 }
 
+/* Footer Break-point 999px */
 @media only screen and (min-width: 999px) {
   .footer {
     justify-content: center;
@@ -689,6 +705,7 @@ input:checked {
     margin: 2em 0.9em 1em 0;
   }
 }
+/* General selectors */
 * {
   box-sizing: border-box;
 }
@@ -744,6 +761,7 @@ li {
   list-style: none;
 }
 
+/* General classes */
 .short-text {
   font-size: 1.5em;
   font-family: "Barlow Condensed", "Gill Sans", sans-serif;
@@ -758,7 +776,7 @@ li {
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
   }
 }
-/* Break-point 1 640px */
+/* Break-point 650px */
 @media only screen and (min-width: 650px) {
   .short-text {
     font-size: 3em;

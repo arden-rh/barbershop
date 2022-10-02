@@ -6,6 +6,8 @@
 @import "testimonials";
 @import "footer";
 
+/* General selectors */
+
 * {
   box-sizing: border-box;
 }
@@ -61,6 +63,8 @@ li {
   list-style: none;
 }
 
+/* General classes */
+
 .short-text {
   font-size: 1.5em;
   font-family: $font-barlow;
@@ -76,7 +80,8 @@ li {
   }
 }
 
-/* Break-point 1 640px */
+/* Break-point 650px */
+
 @media only screen and (min-width: 650px) {
   .short-text {
     font-size: 3em;

@@ -47,6 +47,8 @@
   letter-spacing: 0.1em;
 }
 
+/* Header Break-point 650px */
+
 @media only screen and (min-width: 650px) {
   .header {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
@@ -58,6 +60,8 @@
     padding: 30% 4% 20% 3%;
   }
 }
+
+/* Header Break-point 999px */
 
 @media only screen and (min-width: 999px) {
   .header {
@@ -89,6 +93,8 @@
   }
 }
 
+/* Header Break-point 1349px */
+
 @media only screen and (min-width: 1349px) {
   .header {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
@@ -104,6 +110,8 @@
     font-size: 0.8em;
   }
 }
+
+/* Header Break-point 1799px */
 
 @media only screen and (min-width: 1799px) {
   .header {

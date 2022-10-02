@@ -75,6 +75,8 @@
   letter-spacing: 0.1em;
 }
 
+/* About Break-point 650px */
+
 @media only screen and (min-width: 650px) {
   .about img {
     height: 650px;
@@ -84,6 +86,8 @@
     width: 40%;
   }
 }
+
+/* About Break-point 999px */
 
 @media only screen and (min-width: 999px) {
   .about {
@@ -113,6 +117,8 @@
   }
 }
 
+/* About Break-point 1349px */
+
 @media only screen and (min-width: 1349px) {
   .about {
     gap: 5%;
@@ -127,6 +133,8 @@
     width: 40%;
   }
 }
+
+/* About Break-point 1799px */
 
 @media only screen and (min-width: 1799px) {
   .about img {
