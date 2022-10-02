@@ -404,6 +404,7 @@
   width: 100%;
   height: 200px;
   margin: 30% 0;
+  display: flex;
 }
 
 .card {
@@ -469,6 +470,12 @@
   padding: 0.7em 0;
 }
 
+.customer {
+  color: rgb(191, 146, 91);
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+
 input {
   -moz-appearance: none;
        appearance: none;
@@ -509,10 +516,6 @@ input:checked {
   transform: translateX(0);
 }
 
-.card-row {
-  display: none;
-}
-
 @media only screen and (min-width: 650px) {
   .card-container {
     margin: 20% 0;
@@ -538,19 +541,13 @@ input:checked {
     padding: 5% 0 0 0;
   }
   .card-container {
-    display: none;
-  }
-  .card-row {
-    display: flex;
-    width: 100%;
     align-items: center;
     justify-content: center;
     margin: 10% 0 15% 0;
-    padding: 0 3% 0 0;
   }
   .card-content {
     position: relative;
-    width: 30%;
+    width: 100%;
     max-width: 350px;
     padding: 25px;
     top: 0;
@@ -561,14 +558,21 @@ input:checked {
     font-size: 0.9em;
     padding: 0.5em 0 1.4em 0;
   }
+  .card {
+    float: none;
+    margin: 0 2%;
+  }
+  .card-container input {
+    display: none;
+  }
   .quote-circle {
     position: relative;
-    top: -120px;
-    left: 55px;
+    top: 20px;
+    left: 20px;
   }
 }
 @media only screen and (min-width: 1349px) {
-  .card-row {
+  .card-container {
     margin: 5% 0 10% 0;
   }
 }
