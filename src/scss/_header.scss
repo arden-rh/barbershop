@@ -1,0 +1,113 @@
+/* Header section */
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url("images/banner/banner_img_800w.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  z-index: 1;
+  padding: 0;
+  position: relative;
+}
+
+.header-text {
+  position: absolute;
+  padding: 50% 4% 20% 3%;
+  color: $color-white;
+  z-index: 2;
+  top: 0;
+}
+
+#intro-text {
+  margin: 2em 0 1em 0;
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 2em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+#welcome-text {
+  color: $color-gold;
+  text-transform: uppercase;
+  font-family: $font-poppins;
+  font-weight: 600;
+}
+
+.about-us-btn {
+  border: 2px solid $color-gold;
+  background-color: transparent;
+  color: $color-gold;
+  padding: 0.6em 0.8em;
+  margin-top: 1.5em;
+  font-family: $font-poppins;
+  font-weight: 600;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@media only screen and (min-width: 650px) {
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url("images/banner/banner_img_1200w.jpg") no-repeat center;
+    height: 650px;
+  }
+
+  .header-text {
+    padding: 30% 4% 20% 3%;
+  }
+}
+
+@media only screen and (min-width: 999px) {
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url("images/banner/banner_img_1400w.jpg") no-repeat center;
+  }
+
+  .header-text {
+    padding: 12% 10% 20% 50%;
+  }
+
+  .header-text > div {
+    padding: 0 0 0 5em;
+    margin: 0 0 0 0.7em;
+    border-left: 1px solid $color-gold;
+  }
+
+  #welcome-text {
+    font-size: 0.8em;
+  }
+
+  #intro-text {
+    padding-right: 4em;
+    font-size: 0.7em;
+  }
+
+  .about-us-btn {
+    border-width: 1.5px;
+  }
+}
+
+@media only screen and (min-width: 1349px) {
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url("images/banner/banner_img_1800w.jpg") no-repeat center;
+    height: 700px;
+  }
+
+  .header-text {
+    padding: 10% 20% 10% 50%;
+  }
+
+  #intro-text {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (min-width: 1799px) {
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url("images/banner/banner_img_3000w.jpg") no-repeat center;
+  }
+}

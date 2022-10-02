@@ -1,0 +1,84 @@
+@import "config";
+@import "navbar";
+@import "header";
+@import "services";
+@import "about";
+@import "testimonials";
+@import "footer";
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+  font-family: $font-barlow;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  font-family: $font-barlow;
+  margin: 0;
+}
+
+h3 {
+  color: $color-gold;
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+p {
+  font-family: $font-poppins;
+  color: $color-black;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.short-text {
+  font-size: 1.5em;
+  font-family: $font-barlow;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $color-black;
+}
+
+@supports (-webkit-text-stroke: 1px $color-white) {
+  #style-text {
+    -webkit-text-stroke: 1px $color-white;
+    -webkit-text-fill-color: rgb(0, 0, 0, 0);
+  }
+}
+
+/* Break-point 1 640px */
+@media only screen and (min-width: 650px) {
+  .short-text {
+    font-size: 3em;
+  }
+}
